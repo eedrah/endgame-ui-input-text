@@ -1,0 +1,22 @@
+{
+  "name": "endgame-ui-input-text",
+  "version": "0.0.0",
+  "description": "Test package for EndGame",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eedrah/endgame-ui-input-text.git"
+  },
+  "keywords": [
+    "EndGame"
+  ],
+  "author": "eedrah",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/eedrah/endgame-ui-input-text/issues"
+  },
+  "homepage": "https://github.com/eedrah/endgame-ui-input-text#readme"
+}
