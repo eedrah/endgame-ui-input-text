@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'label-text';
+@import 'card-icon-button';
+@import 'element-margins';
+
+.LabelWrapper {
+    @extend %element-margins;
+    margin-bottom: 9px;
+    padding-bottom: 9px;
+    display: block;
+//    min-width: $input-field-width; // removed because bug in Date-Time picker
+    vertical-align: top;
+
+    &-label {
+        @extend %label-text;
+        margin-bottom: $inner-element-distance;
+    }
+
+    &-hint {
+        @extend %card-icon-button;
+        background-image: url("../../../../Content/img/icons/tip@2x.png");
+    }
+
+    &-error {
+        @extend %card-icon-button;
+        background-image: url("../../../../Content/img/icons/alert@2x.png");
+    }
+
+    input, textarea, select, strong, .LabelWrapper-inner {
+        display: block;
+        width: 100%;
+        margin: 0;
+        margin-top: $short-element-distance;
+    }
+
+    &--invalid {
+        input, textarea, select {
+            border-color: $error-color;
+            color: $error-color;
+        }
+    }
+}
+
+.LabelWrapper:not(:last-child){
+    border-bottom: $internal-separator;
+}
